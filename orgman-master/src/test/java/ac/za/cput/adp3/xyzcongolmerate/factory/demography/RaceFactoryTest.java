@@ -13,9 +13,10 @@ public class RaceFactoryTest {
 
     @Test
     public void buildRace() {
-        Role course = RoleFactory.buildRole("Manager");
-        Assert.assertNotNull(course.getRoleId());
-        Assert.assertNotNull(course);
+        Race race = RaceFactory.buildRace("Coloured");
+
+        Assert.assertNotNull(race.getRaceId());
+        System.out.println("raceId is: " + race.getRaceId());
         /**
          * Your implementation goes here
          *

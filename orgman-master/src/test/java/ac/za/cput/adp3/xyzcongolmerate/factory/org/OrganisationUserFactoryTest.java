@@ -11,9 +11,10 @@ public class OrganisationUserFactoryTest {
 
     @Test
     public void buildOrganisationUser() {
-        OrganisationUser course = OrganisationUserFactory.buildOrganisationUser("1234","User@gmail.com");
-        Assert.assertNotNull(course.getOrgCode());
-        Assert.assertNotNull(course);
+        OrganisationUser organisationUser = OrganisationUserFactory.buildOrganisationUser("er34", "mugammadrihaadvanblerck@gmail.com");
+
+        System.out.println("Testing email : " + organisationUser.getUserEmail());
+        Assert.assertNotNull(organisationUser);
         /**
          * Your implementation goes here
          *

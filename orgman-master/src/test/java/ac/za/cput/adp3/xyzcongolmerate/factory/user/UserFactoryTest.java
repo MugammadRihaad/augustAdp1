@@ -11,8 +11,10 @@ public class UserFactoryTest {
 
     @Test
     public void buildUser() {
-        User course = UserFactory.buildUser("12User@gmail.com","Mugammad ","Rihaad");
-        Assert.assertNotNull(course); /**
+        User user = UserFactory.buildUser("mugammadrihaadvanblerck@gmail.com", "Mugammad", "VanBlerck");
+
+        System.out.println("Testing email: " + user.getUserEmail());
+        Assert.assertNotNull(user); /**
          * Your implementation goes here
          *
          * INSTRUCTION

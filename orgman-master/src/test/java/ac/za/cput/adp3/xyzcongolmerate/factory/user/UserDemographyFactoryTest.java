@@ -13,9 +13,11 @@ public class UserDemographyFactoryTest {
 
     @Test
     public void buildUserDemography() {
-        Date date=new Date();
-        UserDemography course = UserDemographyFactory.buildUserDemography("12User@gmail.com","Manager","123","12",date);
-        Assert.assertNotNull(course); /**
+        Date date = new Date();
+        UserDemography userDemography = UserDemographyFactory.buildUserDemography("mugammadrihaadvanblerck@gmail.com", "Manager", "M2", "C2", date);
+
+        System.out.println("Testing email: " + userDemography.getUserEmail());
+        Assert.assertNotNull(userDemography); /**
          * Your implementation goes here
          *
          * INSTRUCTION

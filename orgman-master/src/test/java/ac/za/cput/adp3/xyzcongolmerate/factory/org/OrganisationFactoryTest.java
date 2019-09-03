@@ -11,10 +11,10 @@ public class OrganisationFactoryTest {
 
     @Test
     public void buildOrganisation() {
-        String testName="test";
-        Organisation course = OrganisationFactory.buildOrganisation(testName);
-        Assert.assertNotNull(course.getOrgCode());
-        Assert.assertNotNull(course);   /**
+        Organisation role = OrganisationFactory.buildOrganisation("Sony");
+
+        Assert.assertNotNull(role.getOrgCode());
+        System.out.println("orgCode is: " + role.getOrgCode());  /**
          * Your implementation goes here
          *
          * INSTRUCTION

@@ -9,9 +9,10 @@ public class GenderFactoryTest {
     
     @Test
     public void buildGender() {
-        Gender course = GenderFactory.buildGender("Male");
-        Assert.assertNotNull(course.getGenderId());
-        Assert.assertNotNull(course);
+        Gender gender = GenderFactory.buildGender("M");
+        
+        Assert.assertNotNull(gender.getGenderId());
+        System.out.println("genderId is: " + gender.getGenderId());
         /**
          * Your implementation goes here
          *

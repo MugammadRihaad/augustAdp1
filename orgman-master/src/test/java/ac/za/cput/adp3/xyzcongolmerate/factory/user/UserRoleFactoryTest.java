@@ -11,8 +11,10 @@ public class UserRoleFactoryTest {
 
     @Test
     public void buildUserRole() {
-        UserRole course = UserRoleFactory.buildUserRole("1234","12User@gmail.com ","234f");
-        Assert.assertNotNull(course);  /**
+        UserRole userRole = UserRoleFactory.buildUserRole("re34", "mugammadrihaadvanblerck@gmail.com", "M34");
+
+        System.out.println("Testing email : " + userRole.getUserEmail());
+        Assert.assertNotNull(userRole);  /**
          * Your implementation goes here
          *
          * INSTRUCTION
